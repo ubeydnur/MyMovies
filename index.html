@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+    <title>Movies</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-md navbar-light bg-light" id="nav">
+            <div class="container">
+                <a class="navbar-brand" href="#">Movies</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="form-inline ml-auto my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div> -->
+            </div>
+        </nav>
+    </header>
+    <section class="container mt-5">
+        <div class="card">
+            <div class="card-header text-center">
+                Add New Movie
+            </div>
+            <div class="card-body">
+                <form id="add-form" name="form">
+                    <div class="row">
+                        <div class="col-md-6 mt-2">
+                            <input id="movie-name" type="text" name="movie-name" class="form-control" placeholder="Movie name">
+                        </div>
+                        <div class="col-md-6 mt-2">
+                            <input id="movie-director" type="text" name="movie-director" class="form-control" placeholder="Director">
+                        </div>
+                        <div class="col-md-6 mt-2">
+                            <input id="movie-url" type="text" name="movie-director" class="form-control" placeholder="Movie poster link">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary px-4 mt-3">Add</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="container mt-5" id="movies">
+        <div class="card">
+            <h5 class="card-header text-center">Movies</h5>
+            <div class="card-body">
+                <table class="table table-striped table-dark">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Movie Poster</th>
+                            <th scope="col">Movie Name</th>
+                            <th scope="col">Director</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="movies-table">
+                        <!-- <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <button class="btn btn-outline-danger" id="delete-all-movies">Tüm Filmleri Temizleyin</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/movie.js"></script>
+    <script src="js/project.js"></script>
+</body>
+
+</html>
